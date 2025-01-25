@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="ZCRAFTS">
+    <meta name="description" content="ZCRAFTS is a 14-year-old boy with the goal of success, and I will help anyone who believes it">
+    <title>ZCRAFTS</title>
+    <style>
+        #message {
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .btn {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #FF0000;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello user</h1>
+    <p>Choose language: English or Spanish</p>
+    <form>
+        <select name="opt" id="opt" onchange="updateMessage()">
+            <option value="english">English</option>
+            <option value="spanish">Spanish</option>
+            <option value="hindi">Hindi</option>
+        </select>
+    </form>
+
+    <div id="message">Please select a language.</div>
+
+    <button class="btn" onclick="window.location.href='https://youtube.com/@roastnami-0?si=xMgiapFokd1pI8pW';">Visit my YouTube Channel</button>
+
+    <script>
+        function updateMessage() {
+            var selectedLanguage = document.getElementById("opt").value;
+            var message = "";
+
+            if (selectedLanguage === "english") {
+                message = "WHO WILL NOT SUBSCRIBE ME IS GAY";
+            } else if (selectedLanguage === "spanish") {
+                message = "QUIÉN NO SE SUSCRIBA A MÍ ES GAY";
+            } else if (selectedLanguage === "hindi") {
+                message = "जो मुझे सब्सक्राइब नहीं करेगा, वह गे है";
+            }
+
+            document.getElementById("message").innerText = message;
+        }
+    </script>
+</body>
+</html>
